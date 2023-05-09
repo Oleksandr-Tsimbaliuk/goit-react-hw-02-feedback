@@ -1,21 +1,15 @@
 import React from 'react';
 
-export const FeedbackOptions = ({
-  onIncrementGoodBtn,
-  onIncrementNeutralBtn,
-  onIncrementBadBtn,
-}) => {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <div>
-      <button type="button" onClick={onIncrementGoodBtn}>
-        Good
-      </button>
-      <button type="button" onClick={onIncrementNeutralBtn}>
-        Neutral
-      </button>
-      <button type="button" onClick={onIncrementBadBtn}>
-        Bad
-      </button>
-    </div>
+    <ul>
+      {options.map(option => (
+        <li key={option}>
+          <button type="button" onClick={() => onLeaveFeedback(option)}>
+            {option}
+          </button>
+        </li>
+      ))}
+    </ul>
   );
 };
