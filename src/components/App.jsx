@@ -11,29 +11,29 @@ export class App extends Component {
     bad: 0,
   };
 
-  handleGoodBtn = () => {
-    this.setState(prevState => {
-      console.log(this.state.good);
-      return {
-        good: prevState.good + 1,
-      };
-    });
-  };
+  // handleGoodBtn = () => {
+  //   this.setState(prevState => {
+  //     console.log(this.state.good);
+  //     return {
+  //       good: prevState.good + 1,
+  //     };
+  //   });
+  // };
 
-  handleNeutralBtn = () => {
-    this.setState(prevState => {
-      return {
-        neutral: prevState.neutral + 1,
-      };
-    });
-  };
-  handleBadBtn = () => {
-    this.setState(prevState => {
-      return {
-        bad: prevState.bad + 1,
-      };
-    });
-  };
+  // handleNeutralBtn = () => {
+  //   this.setState(prevState => {
+  //     return {
+  //       neutral: prevState.neutral + 1,
+  //     };
+  //   });
+  // };
+  // handleBadBtn = () => {
+  //   this.setState(prevState => {
+  //     return {
+  //       bad: prevState.bad + 1,
+  //     };
+  //   });
+  // };
 
   handleBtn = option => {
     this.setState(prevState => ({
