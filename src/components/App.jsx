@@ -13,7 +13,6 @@ export class App extends Component {
 
   // handleGoodBtn = () => {
   //   this.setState(prevState => {
-  //     console.log(this.state.good);
   //     return {
   //       good: prevState.good + 1,
   //     };
